@@ -1,17 +1,10 @@
 <!-- TUTTO QUELLO CHE NON è CORE NE SHARED -->
 <!-- test collapse  -->
+<!-- LOGOS -->
 
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         Primary Logo
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+<ngb-accordion [closeOthers]="true" activeIds="static-1">
+  <ngb-panel id="static-1" title="Primary Logo">
+    <ng-template ngbPanelContent>
       <div class="card-body">
         <!--Logo Desktop-->
         <div class="mb-4 me-5">
@@ -73,18 +66,11 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Mobile
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="static-2" title="Mobile">
+    <ng-template ngbPanelContent>
+    <div class="card-body">
         <div class="me-5 mb-4">
           <h3 class="h5 mb-3">Mobile</h3>
           <div>
@@ -111,17 +97,10 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Footer
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="static-3" title="Footer">
+    <ng-template ngbPanelContent>
       <div class="card-body">
         <div class="me-5 mb-4">
           <h3 class="h5 mb-3">Footer</h3>
@@ -130,10 +109,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
 <!--Logos-->
   
         <!--Logo Desktop-->
