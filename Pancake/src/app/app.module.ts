@@ -11,6 +11,7 @@ import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.c
 import { TableBaseRowComponent } from './shared/table-base-row/table-base-row.component';
 import { TableBaseTitleComponent } from './shared/table-base-title/table-base-title.component';
 import { TableBaseComponent } from './shared/table-base/table-base.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 // import { DsComponent } from './ds/ds.component';
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TableBaseComponent } from './shared/table-base/table-base.component';
     // DsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
