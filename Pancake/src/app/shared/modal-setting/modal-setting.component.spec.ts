@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DesingSystemComponent } from './desing-system.component';
+import { ModalSettingComponent } from './modal-setting.component';
 
-describe('DesingSystemComponent', () => {
-  let component: DesingSystemComponent;
-  let fixture: ComponentFixture<DesingSystemComponent>;
+describe('ModalSettingComponent', () => {
+  let component: ModalSettingComponent;
+  let fixture: ComponentFixture<ModalSettingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DesingSystemComponent ]
+      declarations: [ ModalSettingComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DesingSystemComponent);
+    fixture = TestBed.createComponent(ModalSettingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
